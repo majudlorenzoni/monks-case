@@ -1,19 +1,35 @@
 import React from 'react';
+import ArtistImage from '../ArtistImage/ArtistImage';
 
 const ArtistList = ({ artists }) => {
   return (
-    <div>
-      <h2>Artistas Populares</h2>
-      <ul>
-        {artists.map(artist => (
-          <li key={artist.id}>
-            <p>Nome: {artist.name}</p>
-            <p>Seguidores: {artist.followers.total}</p>
-            <p>Popularidade: {artist.popularity}</p>
-          </li>
-        ))}
-      </ul>
+    <div className="artist-list">
+    <h2>Artistas Pop mais seguidos</h2>
+    <div className="table-container">
+    <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Nome</th>
+            <th>Seguidores</th>
+            <th>Popularidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          {artists.map((artist) => (
+            <tr key={artist.id}>
+              <td>
+                <ArtistImage images={artist.images} />
+              </td>
+              <td>{artist.name}</td>
+              <td>{artist.followers.total}</td>
+              <td>{artist.popularity}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
+     </div>
   );
 };
 
