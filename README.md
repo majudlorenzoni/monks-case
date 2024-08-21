@@ -1,5 +1,12 @@
 > Case .monks
 
+## Acesse o projeto
+Você pode acessar a aplicação no GitHub Pages através do seguinte link:
+
+[Rankings de Artistas Pop e os 5 gêneros mais comuns os artistas pop mais seguidos](https://majudlorenzoni.github.io/monks-case/)
+
+## Rodar o Projeto Localmente
+
 ## 💻 Pré-requisitos
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
