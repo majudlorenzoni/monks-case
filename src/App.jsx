@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { generateRankings } from './services/generateRankings';
 import ArtistList from './components/ArtistList/ArtistList';
 import GenreList from './components/GenreList/GenreList';
+import Navbar from './components/Navbar/Navbar';
+
 import './App.css';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   const [popArtists, setPopArtists] = useState([]);
@@ -24,9 +27,12 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Dados do Spotify</h1>
+      <div className="content">
+      <Navbar />
       <ArtistList artists={popArtists} />
       <GenreList genres={sortedGenres} />
+      </div>
+      <Footer />
     </div>
   );
 };
