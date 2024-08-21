@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/majudlorenzoni/monks-case/static/css/main.332351ff.css",
+    "main.js": "/majudlorenzoni/monks-case/static/js/main.77f302ef.js",
+    "index.html": "/majudlorenzoni/monks-case/index.html",
+    "main.332351ff.css.map": "/majudlorenzoni/monks-case/static/css/main.332351ff.css.map",
+    "main.77f302ef.js.map": "/majudlorenzoni/monks-case/static/js/main.77f302ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.332351ff.css",
+    "static/js/main.77f302ef.js"
+  ]
+}
